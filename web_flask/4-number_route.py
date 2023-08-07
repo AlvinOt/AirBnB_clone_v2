@@ -32,6 +32,7 @@ def pythonText(text="is cool"):
     """display Python followed by value text variable"""
     return "Python {}".format(text.replace("_", " "))
 
+
 @app.route("/number/<int:n>", strict_slashes=False)
 def isNumber(n):
     """display “n is a number” if n is integer"""
